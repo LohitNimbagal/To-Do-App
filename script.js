@@ -1,13 +1,12 @@
-let addList = document.querySelector('.addList')
+const addList = document.querySelector('.addList')
 const list = document.querySelector('.list')
-let newList
 
 const unCheckImg = '/images/uncheck.png'
 
 const addToList = () => {
 
     if (addList.value !== "") {
-        newList = document.createElement('li')
+        const newList = document.createElement('li')
         let span = document.createElement('span')
 
         newList.innerHTML = addList.value
